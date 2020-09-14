@@ -1,0 +1,103 @@
+<div class="revealed"> 
+    <span>(SILENT)</span>
+  </div>
+  <div class="welcome">PARTNER</div> 
+  <br>
+
+  <a href="https://www.silentpartnerprojects.co/"><div class="enter">Enter Now ></div></a>
+
+<style>
+
+@font-face {
+    font-family: 'New-Grotesk-Square-FIVE';
+    src: url('https://static1.squarespace.com/static/5eca23fd4c483c5e7cc7aa48/t/5f44d2f9c8f836265e5d4010/1598345979061/New-Grotesk-Square-FIVEWEB.woffFontURL')
+}
+
+@font-face {
+    font-family: 'GROSAREGULAR';
+    src: url('https://static1.squarespace.com/static/5eca23fd4c483c5e7cc7aa48/t/5f44e1eac69d3c43bec798a6/1598349803129/Grosa-Regular.woff')
+}
+
+@font-face {
+    font-family: 'GROSABOLD';
+    src: url('https://static1.squarespace.com/static/5eca23fd4c483c5e7cc7aa48/t/5f44edc4bb0bb9386173e035/1598352837368/Grosa-Bold.woff')
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  text-align: center;
+  background:#54afff;
+  color: #540008;
+  font-family: 'New-Grotesk-Square-FIVE';
+  font-weight: 300;
+  font-size: 100px;
+  padding-top: 40vh;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.welcome {
+  animation: showup 7s;
+}
+
+.revealed  {
+  width: 0;
+  animation: reveal 7s forwards;
+}
+
+.revealed span {
+  margin-left: -300px;
+  animation: slidein 7s forwards;
+}
+
+.enter {
+    animation: appear 7s;
+    font-family: GROSABOLD;
+    font-size: .2em;
+    text-transform: uppercase;
+}
+
+@keyframes showup {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes slidein {
+  0% { margin-left: -300px; }
+  20% { margin-left: -300px; }
+  35% { margin-left: 0; }
+  100% { margin-left: 0; }
+}
+
+@keyframes reveal {
+  0% { opacity: 0; width: 0px; }
+  20% { opacity: 1; width: 0px; }
+  30% { width: 300px; }
+  80% { opacity: 1; }
+  100% { opacity: 1; width: 300px; }
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    60% { opacity: 0; }
+    80% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+
+
+</style>
